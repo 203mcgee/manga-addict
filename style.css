@@ -266,18 +266,21 @@ ul>li {
 
 #mangaAbout {
 
-    display: flex;
-    justify-content: space-between;
+    display: block;
+    justify-content: space-around;
     align-items: center;
-    /* translate: 455px; */
-    translate: 199px;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    translate: 455px;
+    /* translate: 199px; */
     padding: 30px;
     width: 900px;
-    ;
     height: var(--img-height);
 }
 
 @media only screen and (max-width:600px) {
+
+    /* --------HomePage---------- */
     .navbar {
         flex-direction: column;
         gap: 10px;
@@ -324,12 +327,17 @@ ul>li {
         opacity: 1;
     }
 
-
-
-
     img {
         width: var(--img-width);
         height: var(--img-height);
+    }
+    /* About US Page */
+    #mangaAbout {
+        max-width: 500%;
+        height: auto;
+        translate: -200px;
+
+
     }
 
 
@@ -384,7 +392,7 @@ img {
     border: 2px solid black;
 }
 
-#view{
+#view {
     display: block;
     justify-content: center;
 }
@@ -458,7 +466,7 @@ img {
 
     .card img {
         /* Height and Width were both 100% but it mad the page to big so I decided to change that */
-        max-width:100%;
+        max-width: 100%;
         height: auto;
         margin: 50px;
         object-fit: fill;
@@ -472,7 +480,7 @@ img {
 
     }
 
-    img{
+    img {
         /* padding-left: 500px; */
         /* translate: -58px; */
         max-width: 100%;
@@ -487,14 +495,14 @@ img {
         resize: both;
     }
 
-   
+
 
     .card img {
         max-width: 100%;
         height: 100%;
         margin: 50px;
         display: grid;
-        place-items: center; 
+        place-items: center;
         object-fit: fill;
         overflow: auto;
         resize: both;
