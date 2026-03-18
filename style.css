@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --primary-color: #DAB785;
+    --logo-color: #FE654F;
+
+    --img-width: 259px;
+    /*Once was 25vw*/
+    --img-height: 459px;
+
+}
+
+#top {
+    background-color: var(--primary-color) !important;
+}
+
+.nav-options {
+    text-decoration: none;
+    color: var(--logo-color);
+}
+
+.top-area {
+    margin: 45px;
+    padding: 50px;
+    /* background-color: var(--primary-color); */
+    display: grid;
+    justify-content: center;
+}
+
+
+h2 {
+    display: flex;
+    justify-content: center;
+    /* translate: 85px; */
+}
+
+h2+p {
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+header {
+    margin: 50px;
+    padding: 20px;
+}
+
+.btn {
+    /* background-color: orange; */
+    color: red;
+    border-radius: 50%;
+    background-color: black;
+}
+
+/* .btn-primary:hover{
+
+} */
+
+.navbar-nav {
+    display: flex;
+
+}
+
+.container {
+    display: inline;
+    justify-content: center;
+}
+
+.container-img {
+    display: flex;
+    position: relative;
+    width: 100%;
+    /*Was 25%*/
+    max-width: var(--img-width);
+    margin-bottom: 25px;
+}
+
+.top {
+    background-color: var(--primary-color);
+    border-bottom: 2px solid black;
+}
+
+.image {
+    display: block;
+    width: var(--img-width);
+    height: var(--img-height);
+    position: relative;
+    /* Adding this here so the overlay will fit the image */
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: var(--img-width);
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+#container:hover .overlay {
+    opacity: 1;
+}
+
+
+
+#nav-ul {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+img {
+    width: var(--img-width);
+    height: var(--img-height);
+}
+
+/*This was added by chatgpt*/
+ul {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+body {
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+
+
+.logo {
+    margin: 20px;
+    font-size: 25px;
+    color: var(--logo-color);
+
+}
+
+/* Created a border to make some separation also decided to make margin top and 
+bottom so it will be separated better. */
+.content-area {
+    /* border: 2px dashed black; */
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.content-area:hover .overlay {
+    opacity: 1;
+}
+
+a:link,
+a:active {
+    padding: 9px;
+    margin: 50px;
+    color: #FE654F;
+}
+
+
+
+
+section {
+    display: grid;
+    justify-content: center;
+}
+
+
+#navbar {
+    background-color: var(--primary-color);
+}
+
+/* Come back to this */
+
+/*
+Source - https://stackoverflow.com/a/15710719
+Posted by What have you tried, modified by community. See post 'Timeline' for change history
+Retrieved 2026-03-09, License - CC BY-SA 4.0
+*/
+
+ul>li {
+    display: inline-block;
+    /* You can also add some margins here to make it look prettier */
+}
+
+/* ul>img:hover {} */
+
+
+
+
+
+
+.end {
+    background-color: var(--primary-color);
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+#shop {
+    background-color: var(--logo-color);
+
+}
+
+#shop:hover {
+    color: aqua;
+}
+
+/* 
+.btn-primary {
+    ;
+} */
+
+
+
+
+/* -----------------------------------------------------------About Us Page---------------------------------------------------------------------------------*/
+#story {
+    border: 2px dashed black;
+    padding: 20px;
+
+}
+
+#mangaAbout {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* translate: 455px; */
+    translate: 199px;
+    padding: 30px;
+    width: 900px;
+    ;
+    height: var(--img-height);
+}
+
+@media only screen and (max-width:600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        margin: 20px;
+        display: grid;
+        justify-content: center;
+    }
+
+    #container {
+        position: relative;
+        width: 50%;
+        max-width: var(--img-width);
+        margin-bottom: 25px;
+    }
+
+    .image {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: relative;
+        /*Adding this here so the overlay will fit the image*/
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5);
+        /* Black see-through */
+        color: #f1f1f1;
+        width: 100%;
+        transition: .5s ease;
+        opacity: 0;
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #container:hover .overlay {
+        opacity: 1;
+    }
+
+
+
+
+    img {
+        width: var(--img-width);
+        height: var(--img-height);
+    }
+
+
+
+
+}
+
+/* --------------------------------------selection page-------------------------------------------------- */
+
+
+.grid {
+    margin: 65px;
+    padding: 75px;
+    /* display: flex; */
+    /* When looking up the grid template, I had to W3schools to understand
+    I was able to figure out somehow by using grid-template and grid-template-rows */
+    grid-template: 80px / auto auto auto;
+    grid-template-rows: auto;
+}
+
+.card {
+    margin: 15px;
+    padding: 25px;
+    display: grid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.card:hover {
+    color: #0056b3;
+}
+
+img {
+    width: var(--img-width);
+    height: var(--img-height);
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+
+}
+
+.card img {
+    /* Height and Width were both 100% but it mad the page to big so I decided to change that */
+    width: 75%;
+    height: 75%;
+    margin: 50px;
+    object-fit: fill;
+
+}
+
+.content {
+    padding: 20px;
+    border: 2px solid black;
+}
+
+#view{
+    display: block;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+/* Tablet & Smaller Screens */
+@media (max-width: 992px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* Drop to 2 columns */
+        margin-top: 20px;
+        /* Remove overlap for cleaner mobile feel */
+    }
+
+    .logo {
+        margin: 20px;
+        text-align: center;
+
+    }
+
+    #container {
+        position: relative;
+        width: 50%;
+        max-width: var(--img-width);
+        margin-bottom: 25px;
+    }
+
+    .image {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: relative;
+        /*Adding this here so the overlay will fit the image*/
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5);
+        /* Black see-through */
+        color: #f1f1f1;
+        width: 100%;
+        transition: .5s ease;
+        opacity: 0;
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #container:hover .overlay {
+        opacity: 1;
+    }
+
+    .grid {
+        display: block;
+
+    }
+
+    .card {
+        display: block;
+        overflow: auto;
+        resize: both;
+    }
+
+    .card img {
+        /* Height and Width were both 100% but it mad the page to big so I decided to change that */
+        max-width:100%;
+        height: auto;
+        margin: 50px;
+        object-fit: fill;
+
+    }
+}
+
+@media (max-width:400px) {
+    .grid {
+        display: block;
+
+    }
+
+    img{
+        /* padding-left: 500px; */
+        /* translate: -58px; */
+        max-width: 100%;
+        height: auto;
+        width: 100px;
+        height: var(--img-height);
+    }
+
+    .card {
+        display: block;
+        overflow: auto;
+        resize: both;
+    }
+
+   
+
+    .card img {
+        max-width: 100%;
+        height: 100%;
+        margin: 50px;
+        display: grid;
+        place-items: center; 
+        object-fit: fill;
+        overflow: auto;
+        resize: both;
+    }
+}
