@@ -29,7 +29,14 @@ footer {
 
 .nav-options {
     text-decoration: none;
+    font-weight: bold;
     color: var(--logo-color);
+    list-style: none;
+    display: flex;
+}
+
+.nav-options:hover{
+    color: #f1f1f1;
 }
 
 .top-area {
