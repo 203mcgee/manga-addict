@@ -15,7 +15,15 @@
 
 }
 
+
+
+
+footer{
+    border-top: 2px solid black;
+}
+
 #top {
+    /* Had to put this in because bootstrap wasn't allowing to show  */
     background-color: var(--primary-color) !important;
 }
 
@@ -69,6 +77,7 @@ header {
 .container {
     display: inline;
     justify-content: center;
+
 }
 
 .container-img {
@@ -166,9 +175,10 @@ body {
 /* Created a border to make some separation also decided to make margin top and 
 bottom so it will be separated better. */
 .content-area {
-    /* border: 2px dashed black; */
+    /* border: 10px solid black; */
     margin-bottom: 30px;
     margin-top: 30px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
 }
 
 .overlay {
@@ -280,7 +290,7 @@ ul>li {
 
 @media only screen and (max-width:600px) {
 
-    /* --------HomePage---------- */
+    /* --------HomePageSmaller---------- */
     .navbar {
         flex-direction: column;
         gap: 10px;
@@ -331,7 +341,7 @@ ul>li {
         width: var(--img-width);
         height: var(--img-height);
     }
-    /* About US Page */
+    /*------AboutSmaller Page----- */
     #mangaAbout {
         max-width: 500%;
         height: auto;
