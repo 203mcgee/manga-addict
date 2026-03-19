@@ -18,7 +18,7 @@
 
 
 
-footer{
+footer {
     border-top: 2px solid black;
 }
 
@@ -35,9 +35,17 @@ footer{
 .top-area {
     margin: 45px;
     padding: 50px;
-    /* background-color: var(--primary-color); */
+    background-image: url("./assets/images/reading.jpg");
     display: grid;
     justify-content: center;
+}
+
+.hero-header {
+    color: var(--logo-color);
+}
+
+.hero-para {
+    color: var(--logo-color);
 }
 
 
@@ -341,6 +349,13 @@ ul>li {
         width: var(--img-width);
         height: var(--img-height);
     }
+
+    .top-area {
+        background: url("./assets/images/reading.jpg");
+        background-repeat: no-repeat;
+        background-size: 500px;
+    }
+
     /*------AboutSmaller Page----- */
     #mangaAbout {
         max-width: 500%;
