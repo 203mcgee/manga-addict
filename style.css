@@ -244,20 +244,7 @@ section {
     background-color: var(--primary-color);
 }
 
-/* Come back to this */
 
-/*
-Source - https://stackoverflow.com/a/15710719
-Posted by What have you tried, modified by community. See post 'Timeline' for change history
-Retrieved 2026-03-09, License - CC BY-SA 4.0
-*/
-
-ul>li {
-    display: inline-block;
-    /* You can also add some margins here to make it look prettier */
-}
-
-/* ul>img:hover {} */
 
 
 
@@ -309,23 +296,8 @@ ul>li {
     border-bottom: 2px solid black;
 }
 
-/* #mangaAbout {
 
-    display: block;
-    justify-content: space-around;
-    align-items: center;
-    /* justify-content: space-between; */
-/* align-items: center; */
-/* translate: 455px;
-    /* translate: 199px; */
-/* padding: 30px;
-    width: 900px;
-    height: var(--img-height); */
-/* } */
 
-.aboutPage {
-    /* background-image: url("./assets/images/hero.jpg"); */
-}
 
 @media only screen and (max-width:600px) {
 
@@ -400,7 +372,7 @@ ul>li {
         font-size: 25px;
     } */
 
-    .about-header {}
+    
 
 
 
