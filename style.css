@@ -16,7 +16,7 @@
 }
 
 
-
+/* -------------------------------------Home Page ----------------------------------------------------------- */
 
 footer {
     border-top: 2px solid black;
@@ -27,25 +27,17 @@ footer {
     background-color: var(--primary-color) !important;
 }
 
-/* #navbarSupportedContent{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:  5%;
-    position: absolute;
-    top: 0;
-    z-index: 100;
-} */
+
 
 .nav-options {
+    display: flex;
     text-decoration: none;
     font-weight: bold;
     color: var(--logo-color);
     list-style: none;
-    display: flex;
 }
 
-.nav-options:hover{
+.nav-options:hover {
     color: #f1f1f1;
 }
 
@@ -53,8 +45,6 @@ footer {
     margin: 45px;
     padding: 50px;
     background-image: url("./assets/images/reading.jpg");
-    /* display: grid;
-    justify-content: center; */
     object-fit: cover;
     background-size: cover;
     background-position: center;
@@ -69,7 +59,8 @@ footer {
 .hero-header {
     color: var(--logo-color);
     background-color: #f1f1f1;
-    font-size: clamp(2rem, 5vw, 3.5rem); /* Responsive font size */
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    /* Responsive font size */
     margin-bottom: 15px;
 }
 
@@ -81,13 +72,12 @@ footer {
 h2 {
     display: flex;
     justify-content: center;
-    /* translate: 85px; */
 }
 
 h2+p {
     display: flex;
     justify-content: center;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
 header {
@@ -96,20 +86,17 @@ header {
 }
 
 .btn {
-    /* background-color: orange; */
     color: red;
     border-radius: 50%;
     background-color: black;
 }
 
-/* .btn-primary:hover{
 
-} */
 
-.navbar-nav {
+/* .navbar-nav {
     display: flex;
 
-}
+} */
 
 .container {
     display: inline;
@@ -194,7 +181,7 @@ ul {
 body {
     font-family: "Merriweather", serif !important;
     font-optical-sizing: auto;
-    font-weight: 400px;
+    font-weight: 400px !important;
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
@@ -215,7 +202,6 @@ bottom so it will be separated better. */
     /* border: 10px solid black; */
     margin-bottom: 30px;
     margin-top: 30px;
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
 }
 
 .overlay {
@@ -283,7 +269,7 @@ ul>li {
     display: grid;
     justify-content: center;
     text-align: center;
-    padding: 30px;
+    padding: 150px;
     margin-top: 50px;
 }
 
@@ -296,33 +282,49 @@ ul>li {
     background-color: aqua;
 }
 
-/* 
-.btn-primary {
-    ;
-} */
+
 
 
 
 
 /* -----------------------------------------------------------About Us Page---------------------------------------------------------------------------------*/
+
+.about {
+    display: block;
+    align-content: center;
+}
+
 #story {
     border: 2px dashed black;
-    padding: 20px;
+    background-color: #f1f1f1;
+    padding: 200px;
+    margin: 50px 5px 10px 8px;
+    font-size: 25px;
 
 }
 
-#mangaAbout {
+.about-header {
+    font-size: 75px;
+
+    border-bottom: 2px solid black;
+}
+
+/* #mangaAbout {
 
     display: block;
     justify-content: space-around;
     align-items: center;
     /* justify-content: space-between; */
-    /* align-items: center; */
-    translate: 455px;
+/* align-items: center; */
+/* translate: 455px;
     /* translate: 199px; */
-    padding: 30px;
+/* padding: 30px;
     width: 900px;
-    height: var(--img-height);
+    height: var(--img-height); */
+/* } */
+
+.aboutPage {
+    /* background-image: url("./assets/images/hero.jpg"); */
 }
 
 @media only screen and (max-width:600px) {
@@ -386,13 +388,20 @@ ul>li {
     }
 
     /*------AboutSmaller Page----- */
-    #mangaAbout {
+    /* #mangaAbout {
         max-width: 500%;
         height: auto;
         translate: -200px;
 
 
-    }
+    } */
+
+    /* #story{
+        font-size: 25px;
+    } */
+
+    .about-header {}
+
 
 
 
@@ -560,5 +569,16 @@ img {
         object-fit: fill;
         overflow: auto;
         resize: both;
+    }
+
+
+
+    #story {
+        display: block;
+        font-size: 5px !important;
+    }
+
+    .about-header {
+        font-size: 25px !important;
     }
 }
