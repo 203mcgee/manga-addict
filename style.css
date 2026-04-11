@@ -365,8 +365,16 @@ section {
 img {
   width: var(--img-width);
   height: var(--img-height);
+
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
+}
+
+/* Add this class so I can fit the images in the selection page better.
+Also, I have to put the !important because bootstrap prevents the images to change for some reason. */
+.sel-img{
+    width: 200px !important;
+    height: 400px !important;
 }
 
 .card img {
@@ -464,6 +472,12 @@ img {
     translate: -99px;
     /* grid-template-columns: 80px / auto auto auto; NEW CHANGE 4/10*/
     /*Make sure to check the web responsiveness for heading*/
+  }
+
+  .sel-img{
+    height: 300px !important;
+    width: 200px !important;
+    translate: -3rem;
   }
 
   img {
