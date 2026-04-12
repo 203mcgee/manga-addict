@@ -355,8 +355,8 @@ section {
   margin: 15px;
   padding: 25px;
   display: grid;
-  /* height: 20px;
-  width: 500px; */
+  /* height: 10px;
+  width: 100px; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
