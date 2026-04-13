@@ -436,7 +436,7 @@ Also, I have to put the !important because bootstrap prevents the images to chan
   /* Height and Width were both 100% but it mad the page to big so I decided to change that */
   width: 75%;
   height: 75%;
-  margin: 50px;
+  margin: 50px; /*Come back to this-  we get rid of this does better for mobile devices but it staying helps */
   object-fit: fill;
 }
 
