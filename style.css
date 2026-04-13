@@ -240,7 +240,7 @@ section {
   align-content: center;
 }
 
-#story {
+.story {
   border: 2px dashed black;
   background-color: #f1f1f1;
   padding: 200px;
@@ -342,7 +342,7 @@ section {
     align-content: center;
   }
 
-  #story {
+  .story {
     /* font-size: clamp(1rem, 3vw, 3rem) !important; */
     /* padding: 15px !important; */
     font-size: clamp(0.9rem, calc(3vw + 1rem), 2rem) !important;
@@ -364,7 +364,7 @@ section {
 }
 
 @media (max-width: 400px) {
-  #story {
+  .story {
     /* font-size: clamp(1rem, 3vw, 3rem) !important; */
     /* padding: 15px !important; */
     font-size: clamp(0.9rem, calc(3vw + 1rem), 2rem) !important;
@@ -563,11 +563,17 @@ Also, I have to put the !important because bootstrap prevents the images to chan
     overflow: auto;
     resize: both;
   }
-
-  #story {
+/* Come back to story once you have visited the .card  */
+  .story {
     display: block;
-    font-size: 5px !important;
+    /* font-size: 5px !important; */
   }
+
+  .cardAbout {
+  margin: 15px;
+  padding: 25px;
+  display: grid;
+}
 
   .about-header {
     font-size: 25px !important;
