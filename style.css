@@ -85,11 +85,6 @@ header {
   background-color: black;
 }
 
-/* .navbar-nav {
-    display: flex;
-
-} */
-
 .container {
   display: inline;
   justify-content: center;
@@ -150,7 +145,15 @@ img {
 }
 
 /*This was added by chatgpt*/
-ul {
+/* ul {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+} */
+
+div {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -161,7 +164,7 @@ ul {
 body {
   font-family: "Merriweather", serif !important;
   font-optical-sizing: auto;
-  font-weight: 400px !important;
+  font-weight: 400 !important;
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
@@ -254,7 +257,7 @@ section {
   border-bottom: 2px solid black;
 }
 
-.endAbout {
+.end-about {
   background-color: var(--primary-color);
   display: grid;
   justify-content: center;
@@ -350,17 +353,14 @@ section {
     padding: 150px !important;
   }
   /* Note to Zoe: At 4:11,you cleaned the code a little bit and working on the web responsiveness, change footer class in about to endAbout    */
-  .endAbout {
+  .end-about {
     background-color: var(--primary-color);
     display: grid;
     justify-content: center;
     text-align: center;
     padding: 15px; /*Was previosly 150*/
     margin-top: 50px;
-
   }
-
-  
 }
 
 @media (max-width: 400px) {
@@ -373,14 +373,13 @@ section {
     /* line-height: 1.6px !important; */
   }
   /* Note to Zoe: At 4:11,you cleaned the code a little bit and working on the web responsiveness, change footer class in about to endAbout    */
-  .endAbout {
+  .end-about {
     background-color: var(--primary-color);
     display: grid;
     justify-content: center;
     text-align: center;
     padding: 15px; /*Was previosly 150*/
     margin-top: 50px;
-
   }
 }
 
@@ -427,16 +426,16 @@ img {
 
 /* Add this class so I can fit the images in the selection page better.
 Also, I have to put the !important because bootstrap prevents the images to change for some reason. */
-.sel-img {
+/* .sel-img {
   width: 200px !important;
   height: 400px !important;
-}
+} */
 
 .card img {
   /* Height and Width were both 100% but it mad the page to big so I decided to change that */
-  width: 75%;
-  height: 75%;
-  margin: 50px; /*Come back to this-  we get rid of this does better for mobile devices but it staying helps */
+  width: 20vw;
+  height: 35vh !important;
+  /* margin: 50px; Come back to this-  we get rid of this does better for mobile devices but it staying helps */
   object-fit: fill;
 }
 
@@ -499,9 +498,9 @@ Also, I have to put the !important because bootstrap prevents the images to chan
     opacity: 1;
   }
 
-  .grid {
+  /* .grid {
     display: block;
-  }
+  } */
 
   .card {
     display: block;
@@ -529,11 +528,11 @@ Also, I have to put the !important because bootstrap prevents the images to chan
     /*Make sure to check the web responsiveness for heading*/
   }
 
-  .sel-img {
+  /* .sel-img {
     height: 300px !important;
     width: 200px !important;
     translate: -3rem;
-  }
+  } */
 
   img {
     /* padding-left: 500px; */
@@ -553,27 +552,27 @@ Also, I have to put the !important because bootstrap prevents the images to chan
   }
 
   .card img {
-    max-width: 100%;
+    /* max-width: 100%; */
     /* height: 100%; */
-    height: 500px;
-    margin: 50px;
+    /* height: 500px; */
+    /* margin: 50px; */
     display: grid;
     place-items: center;
     object-fit: fill;
     overflow: auto;
     resize: both;
   }
-/* Come back to story once you have visited the .card  */
+  /* Come back to story once you have visited the .card  */
   .story {
     display: block;
     /* font-size: 5px !important; */
   }
 
-  .cardAbout {
-  margin: 15px;
-  padding: 25px;
-  display: grid;
-}
+  .card-about {
+    margin: 15px;
+    padding: 25px;
+    display: grid;
+  }
 
   .about-header {
     font-size: 25px !important;
