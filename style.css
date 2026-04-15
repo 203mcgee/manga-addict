@@ -510,20 +510,23 @@ Also, I have to put the !important because bootstrap prevents the images to chan
     opacity: 1;
   }
 
-  /* .grid {
+  .grid {
     display: block;
-  } */
+  }
 
   .card {
-    display: block;
     overflow: auto;
-    resize: both;
+    /* resize: both; */
+    transform: scale(.75);
+    width: fit-content;
+    height: fit-content;
   }
 
   .card img {
     /* Height and Width were both 100% but it mad the page to big so I decided to change that */
-    max-width: 100%;
-    height: auto;
+
+    width: fit-content;
+    height: fit-content;
     margin: 50px;
     object-fit: fill;
   }
@@ -532,6 +535,7 @@ Also, I have to put the !important because bootstrap prevents the images to chan
 @media (max-width: 500px) {
   .grid {
     display: block;
+    grid-template: 80px / auto auto auto;
     grid-template-rows: 200px;
     width: 100px;
     translate: 230px;
