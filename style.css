@@ -24,7 +24,19 @@ footer {
   background-color: var(--primary-color) !important;
 }
 
-.nav-options {
+.nav-options{
+  display: flex;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--logo-color);
+  list-style: none;
+}
+
+.nav-options:hover{
+    color: #f1f1f1;
+}
+
+/* .nav-options {
   display: flex;
   text-decoration: none;
   font-weight: bold;
@@ -34,7 +46,7 @@ footer {
 
 .nav-options:hover {
   color: #f1f1f1;
-}
+} */
 
 .top-area {
   margin: 45px;
