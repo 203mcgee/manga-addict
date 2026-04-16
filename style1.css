@@ -168,6 +168,7 @@ a:active {
   .grid {
     margin: 65px;
     padding: 75px;
+
     /* When looking up the grid template, I had to W3schools to understand
     I was able to figure out somehow by using grid-template and grid-template-rows */
     grid-template: 60px / auto auto auto;
@@ -186,7 +187,6 @@ a:active {
     color: #0056b3;
   }
 
-
   .card img {
     /* Height and Width were both 100% but it mad the page to big so I decided to change that */
     display: block;
@@ -203,15 +203,50 @@ a:active {
   }
 
   #view {
-    display: inline-block;
+    display: block;
+    margin: auto;
     padding: 12px 35px;
     background: var(--logo-color);
     text-decoration: none;
-    font-weight: bold;
-    transition: transform 0.2s ease;
   }
 
+  /* Come back to the selection page */
+
   /* About */
+
+  .about-page {
+    display: block;
+    align-content: center;
+  }
+
+  .card-about {
+    margin: 15px;
+    padding: 25px;
+    display: grid;
+  }
+
+  .story {
+    margin: 5px;
+    font-size: 15px;
+  }
+
+  .about-header {
+    /* https://www.w3schools.com/css//css_align.asp */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px !important;
+    border-bottom: 2px solid black;
+  }
+
+  .end-about {
+    background-color: var(--primary-color);
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding: 150px;
+    margin-top: 50px;
+  }
 
   /* Contact */
 }
