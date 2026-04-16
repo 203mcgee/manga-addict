@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #dab785;
+  --logo-color: #fe654f;
+
+  --img-width: 259px;
+  /*Once was 25vw*/
+  --img-height: 459px;
+}
+
+body {
+  font-family: "Merriweather", serif !important;
+  font-optical-sizing: auto;
+  font-weight: 400 !important;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* Index/Homepage */
+
+a:link,
+a:active {
+  padding: 9px;
+  margin: 50px;
+  color: #fe654f;
+}
+
+.end {
+  background-color: var(--primary-color);
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  padding: 150px;
+  margin-top: 50px;
+}
+
+/* Web Responsivness*/
+
+@media (max-width: 992px) {
+  /* Index/Homepage */
+  .logo {
+    /* margin: 20px; */
+    display: grid;
+    justify-content: center;
+  }
+
+  #top {
+    background-color: var(--primary-color) !important;
+  }
+
+  .nav-options {
+    display: flex;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--logo-color);
+    list-style: none;
+  }
+
+  .nav-options:hover {
+    color: #f1f1f1;
+  }
+
+  .hero {
+    background-image: url("./assets/images/reading.jpg");
+    padding: 100px;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 130px;
+  }
+
+  #shop {
+    /* display: block;
+        margin: 0 13rem;
+        background-color: var(--logo-color);
+        width: 190px;
+        height: 40px; */
+    display: inline-block;
+    padding: 12px 35px;
+    background: var(--logo-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+  }
+
+  #shop:hover {
+    background-color: floralwhite;
+  }
+
+  .container {
+    display: inline;
+    justify-content: center;
+  }
+
+  div {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .container-img {
+    position: relative;
+    width: 50%;
+    max-width: var(--img-width);
+    width: 400vw;
+    margin-bottom: 25px;
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    /*Adding this here so the overlay will fit the image*/
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: 0.5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .container-img:hover .overlay {
+    opacity: 1;
+  }
+
+  .end {
+    background-color: var(--primary-color);
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    border-top: 2px solid black;
+    padding: 150px;
+    margin-top: 50px;
+  }
+
+  /* Selection */
+  .grid {
+    margin: 65px;
+    padding: 75px;
+    /* When looking up the grid template, I had to W3schools to understand
+    I was able to figure out somehow by using grid-template and grid-template-rows */
+    grid-template: 80px / auto auto auto;
+    grid-template-rows: auto;
+  }
+
+  .card {
+    margin: 15px;
+    padding: 25px;
+    display: grid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .card:hover {
+    color: #0056b3;
+  }
+
+  img {
+    width: var(--img-width);
+    height: var(--img-height);
+
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+  }
+
+  /* Add this class so I can fit the images in the selection page better.
+Also, I have to put the !important because bootstrap prevents the images to change for some reason. */
+  /* .sel-img {
+  width: 200px !important;
+  height: 400px !important;
+} */
+
+  .card img {
+    /* Height and Width were both 100% but it mad the page to big so I decided to change that */
+    
+    width: fit-content;
+    height: 35vh !important;
+
+    /* margin: 50px; Come back to this-  we get rid of this does better for mobile devices but it staying helps */
+    object-fit: fill;
+  }
+
+  .content {
+    padding: 20px;
+    border: 2px solid black;
+  }
+
+  #view {
+    display: block;
+    justify-content: center;
+  }
+
+  /* About */
+
+  /* Contact */
+}
