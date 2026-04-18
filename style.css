@@ -342,6 +342,11 @@ Also, I have to put the !important because bootstrap prevents the images to chan
   justify-content: center;
 }
 
+#view {
+  display: block;
+  justify-content: center;
+}
+
 
 /* ---------------------------------------------------Mobile Responsiveness------------------------------------------------------------- */
 
