@@ -14,14 +14,187 @@
 }
 
 body {
-  font-family: "Merriweather", serif !important;
+  font-family: "Merriweather", serif;
   font-optical-sizing: auto;
-  font-weight: 400 !important;
+  font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
 
-/* Index/Homepage */
+/* Index/Homepage Full Page */
+.homepage-header {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.top-area {
+  /* background-color: rgba(255,255,255,0.8); */
+  margin-top: 115px;
+}
+
+.hero-header {
+  padding: 35px;
+}
+
+#top {
+  background-color: var(--primary-color) !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+#links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+#links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+#links a:hover,
+#links a.active {
+  color: var(--logo-color);
+}
+
+/* .links li {
+  margin-left: 20px;
+}
+
+.links a {
+  color: #bdc3c7;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.links a:hover,
+.links a.active {
+  color: var(--text-light);
+} */
+
+.nav-options {
+  display: flex;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--logo-color);
+  list-style: none;
+}
+
+.nav-options:hover {
+  color: #f1f1f1;
+}
+
+.hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./assets/images/reading.jpg");
+  align-items: center;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  /* min-height: 30vh; */
+  min-height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--logo-color);
+  padding: 0 20px;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+h2 + p {
+  display: flex;
+  justify-content: center;
+  /* background-color: aquamarine; */
+}
+
+#shop {
+  display: inline-block;
+  padding: 12px 35px;
+  background: var(--logo-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+#shop:hover {
+  background-color: floralwhite;
+}
+
+.container {
+  display: inline;
+  justify-content: center;
+  margin: 20vh;
+}
+
+div {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+
+.container-img {
+  position: relative;
+  width: 50%;
+  max-width: var(--img-width);
+  width: 400vw;
+  margin-bottom: 25px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  /*Adding this here so the overlay will fit the image*/
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container-img:hover .overlay {
+  opacity: 1;
+}
+
+.end {
+  background-color: var(--primary-color);
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  border-top: 2px solid black;
+  padding: 15px;
+}
 
 a:link,
 a:active {
@@ -30,7 +203,81 @@ a:active {
   color: #fe654f;
 }
 
-.end {
+.footer {
+  background-color: var(--primary-color);
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  border-top: 2px solid black;
+  padding: 15px;
+  /* margin-top: 5px; */
+}
+
+.form {
+  border: 1px solid;
+  width: max-content;
+}
+
+.homepage-button {
+  border: none;
+  padding: 2px 4px;
+  background-color: transparent;
+}
+#email {
+  padding: 2px;
+  height: 2px 4px;
+  border: none;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Navbar to the right
+Logo to the left
+Circular shadow behind the words on hero
+
+LaTorya Sadler
+3:16 PM
+Space between all rights reserved
+Add a Newsletter to home page */
+
+/*Selection Full Page  */
+
+/* About Full Page */
+.about-page {
+  display: block;
+  align-content: center;
+}
+
+.card-about {
+  margin: 15px;
+  padding: 25px;
+  display: grid;
+}
+
+.story {
+  padding: 200px;
+  margin: 50px 5px 10px 8px;
+  font-size: 25px;
+}
+
+.about-header {
+  /* https://www.w3schools.com/css//css_align.asp */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 55px !important;
+  border-bottom: 2px solid black;
+}
+
+.story {
+  margin: 5px;
+  font-size: 50px;
+}
+.end-about {
   background-color: var(--primary-color);
   display: grid;
   justify-content: center;
@@ -38,6 +285,10 @@ a:active {
   padding: 150px;
   margin-top: 50px;
 }
+
+/* Contact Us Full Page */
+
+/* ----------------------------------------------------------------------------------------------- */
 
 /* Web Responsivness*/
 
@@ -53,6 +304,17 @@ a:active {
     background-color: var(--primary-color) !important;
   }
 
+  .top-area {
+    display: flex;
+    margin: auto;
+    height: 10vh;
+    backdrop-filter: sepia(90%);
+  }
+
+  /* .links li {
+    margin: 0 10px;
+  } */
+
   .nav-options {
     display: flex;
     text-decoration: none;
@@ -66,7 +328,9 @@ a:active {
   }
 
   .hero {
-    background-image: url("./assets/images/reading.jpg");
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("./assets/images/reading.jpg");
     align-items: center;
     object-fit: cover;
     background-size: cover;
@@ -80,6 +344,27 @@ a:active {
     padding: 0 20px;
   }
 
+  /* .hero-header{
+    padding: 30px;
+  } */
+
+  /* .links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  .links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .links a:hover,
+  .links a.active {
+    color: var(--logo-color);
+  } */
+
   h2 {
     display: flex;
     justify-content: center;
@@ -88,7 +373,6 @@ a:active {
   h2 + p {
     display: flex;
     justify-content: center;
-    /* background-color: aquamarine; */
   }
 
   #shop {
@@ -176,8 +460,7 @@ a:active {
   }
 
   .card {
-    display: table;
-    margin: 0 auto;
+    width: fit-content;
     padding: 25px;
     transform: scale(0.9);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
