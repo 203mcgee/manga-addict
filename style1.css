@@ -25,6 +25,7 @@ body {
 .homepage-header {
   display: flex;
   flex-direction: column;
+  width: 100vw;
 }
 
 .logo {
@@ -140,6 +141,7 @@ h2 + p {
   display: inline;
   justify-content: center;
   margin: 20vh;
+ 
 }
 
 div {
@@ -244,49 +246,78 @@ Space between all rights reserved
 Add a Newsletter to home page */
 
 /*Selection Full Page  */
-.grid {
-  margin: 65px 15px 15px 15px;
-  padding: 75px;
-  display: grid;
+.selection {
+  display: flex;
+  margin: auto;
+}
 
-  /* When looking up the grid template, I had to W3schools to understand
-    I was able to figure out somehow by using grid-template and grid-template-rows */
-  grid-template: 80px / auto auto auto;
-  grid-template-rows: auto;
+.selection-header {
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .card {
-  margin: 15px 30px 15px 15px;
+  margin: 35px 35px 35px 35px;
   padding: 25px;
-  max-width: 95vw;
+  width: fit-content;
+  height: fit-content;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+} 
+
+/* .card {
+  margin: 45px 50px 45px 50px;
+  padding: 25px;
+  
   width: fit-content;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
-}
+} */
 
 .card:hover {
   color: #0056b3;
 }
 
-img {
+.sel-img {
+  width: 25vw !important;
+  height: 40vh !important;
+}
+
+/* img {
   width: var(--img-width);
   height: var(--img-height);
 
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
-}
+} */
+
+
 
 .card img {
   /* Height and Width were both 100% but it mad the page to big so I decided to change that */
-  width: 20vw;
-  height: 35vh !important;
+width: 70vw;
+height: 85vh !important;
 
-  /* margin: 50px; Come back to this-  we get rid of this does better for mobile devices but it staying helps */
-  object-fit: fill;
-}
+/* margin: 50px; Come back to this-  we get rid of this does better for mobile devices but it staying helps */
+object-fit: fill;
+ }
 
 .content {
   padding: 20px;
   border: 2px solid black;
+} 
+
+#view {
+  display: block;
+  justify-content: center;
+  /* padding:0px 25px 0px 25px; */
+  padding: 15px;
+  background-color: var(--logo-color);
 }
 
 /* About Full Page */
@@ -337,6 +368,12 @@ img {
 
 @media (max-width: 992px) {
   /* Index/Homepage Mobile */
+  .homepage-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
   .logo {
     /* margin: 20px; */
     display: grid;
@@ -345,6 +382,7 @@ img {
 
   #top {
     background-color: var(--primary-color) !important;
+    object-fit: fill;
   }
 
   .top-area {
@@ -492,21 +530,28 @@ img {
   }
 
   /* Selection Mobile */
+
+  .selection {
+    display: flex;
+    margin: auto;
+  }
+  .selection-header{
+    font-size: 50px;
+  }
   .grid {
-    margin: 65px;
+    /* margin: 65px; */
+    margin: 0 auto;
     padding: 75px;
     display: block;
 
-    /* When looking up the grid template, I had to W3schools to understand
-    I was able to figure out somehow by using grid-template and grid-template-rows */
-    grid-template: 60px / auto auto auto;
-    grid-template-rows: auto;
+    grid-template-columns: repeat(1,1fr);
+    /* grid-template-rows: auto; */
   }
 
   .card {
     width: fit-content;
     padding: 25px;
-    transform: scale(0.9);
+    transform: scale(0.99);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
 
@@ -514,13 +559,17 @@ img {
     color: #0056b3;
   }
 
+  .sel-img{
+    width: 100%;
+  }
+
   .card img {
     /* Height and Width were both 100% but it mad the page to big so I decided to change that */
     display: block;
     margin: auto;
     width: fit-content;
-    height: 35vh !important;
     object-fit: fill;
+    
   }
 
   .content {
