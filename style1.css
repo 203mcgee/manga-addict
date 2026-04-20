@@ -246,7 +246,7 @@ Space between all rights reserved
 Add a Newsletter to home page */
 
 /*Selection Full Page  */
- .selection {
+.selection {
   display: flex;
   margin: auto;
 }
@@ -260,7 +260,7 @@ Add a Newsletter to home page */
   display: grid;
   gap: 5px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3,1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .card {
@@ -272,46 +272,38 @@ Add a Newsletter to home page */
   transform: scale(.78);
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
-} 
+}
 
 .card:hover {
   color: #0056b3;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
 }
-.card-title{
+.card-title {
   text-align: center;
 }
 
-.star-rating{
+.star-rating {
   font-size: 25px;
 }
 
-.card-description{
+.card-description {
   font-size: 23.5px;
 }
 
-/* .sel-img {
+.sel-img {
   display: flex;
   margin: auto;
-  width: 25vw !important;
-  height: fit-content !important;
-  image-rendering: high-quality;
-} */
-
-
+  inline-size: 300px;
+  aspect-ratio: 2/4;
+  object-fit: fill;
+}
 
 #view {
- 
   display: flex;
   align-items: center;
   padding: 15px;
   background-color: var(--logo-color);
-} 
-
-
-
-
-
+}
 
 /* .card {
   border: none;
@@ -319,8 +311,6 @@ Add a Newsletter to home page */
   overflow: hidden;
   transition: box-shadow 0.3s ease;
 } */
-
-
 
 .star-rating i {
   color: #ffc107; /* Gold stars */
@@ -599,11 +589,11 @@ Add a Newsletter to home page */
     font-size: 1rem;
   }
 
-  .content {
+  /* .content {
     padding: 15px;
     transform: scale(0.98);
     border: 2px solid black;
-  }
+  } */
 
   #view {
     display: block;
@@ -652,4 +642,13 @@ Add a Newsletter to home page */
   }
 
   /* Contact */
+}
+
+@media (max-width: 500px) {
+  .homepage-header {
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+    width: 100%;
+  }
 }
