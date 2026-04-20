@@ -35,10 +35,17 @@ body {
 
 .top-area {
   /* background-color: rgba(255,255,255,0.8); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   margin-top: 115px;
+  padding: 20px;
 }
 
 .hero-header {
+  margin-bottom: 15px;
   padding: 35px;
 }
 
@@ -101,13 +108,13 @@ body {
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("./assets/images/reading.jpg");
   align-items: center;
+
   object-fit: cover;
   background-size: cover;
   background-position: center;
   /* min-height: 30vh; */
   min-height: fit-content;
   display: flex;
-  align-items: center;
   justify-content: center;
   text-align: center;
   color: var(--logo-color);
@@ -419,15 +426,16 @@ Add a Newsletter to home page */
     background:
       linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url("./assets/images/reading.jpg");
+    display: flex;
+    justify-content: center;
     align-items: center;
+    gap: 20px;
+
+    text-align: center;
     object-fit: cover;
     background-size: cover;
     background-position: center;
     height: 30vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     color: var(--logo-color);
     padding: 0 20px;
   }
@@ -465,6 +473,8 @@ Add a Newsletter to home page */
 
   #shop {
     display: inline-block;
+    width: 200px;
+    height: 50px;
     padding: 12px 35px;
     background: var(--logo-color);
     text-decoration: none;
@@ -552,7 +562,6 @@ Add a Newsletter to home page */
     display: block;
 
     grid-template-columns: repeat(1, 1fr);
-    /* grid-template-rows: auto; */
   }
 
   .card {
@@ -610,17 +619,20 @@ Add a Newsletter to home page */
   .about-page {
     display: block;
     align-content: center;
+    transform: scale(.9);
   }
 
   .card-about {
     margin: 15px;
     padding: 25px;
     display: grid;
+    font-size: 35px;
+    font-weight: 400;
   }
 
   .story {
     margin: 5px;
-    font-size: 45px;
+    font-size: 15px;
   }
 
   .about-header {
@@ -649,6 +661,6 @@ Add a Newsletter to home page */
     display: flex;
     flex-direction: column;
     object-fit: cover;
-    width: 100%;
+    width: 100vw;
   }
 }
