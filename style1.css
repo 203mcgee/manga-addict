@@ -49,6 +49,7 @@ body {
   align-items: center;
   gap: 20px;
   padding: 20px;
+  overflow: hidden;
 }
 
 #links {
@@ -141,7 +142,6 @@ h2 + p {
   display: inline;
   justify-content: center;
   margin: 20vh;
- 
 }
 
 div {
@@ -246,7 +246,7 @@ Space between all rights reserved
 Add a Newsletter to home page */
 
 /*Selection Full Page  */
-.selection {
+ .selection {
   display: flex;
   margin: auto;
 }
@@ -265,60 +265,40 @@ Add a Newsletter to home page */
 
 .card {
   margin: 35px 35px 35px 35px;
-  padding: 25px;
+  padding: 25px 25px 25px 25px;
   width: fit-content;
-  height: 10vh;
+  overflow: hidden;
+  /*height: 10vh;
   transform: scale(.78);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
 } 
 
 .card:hover {
   color: #0056b3;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
 }
 .card-title{
   text-align: center;
 }
 
 .star-rating{
-  font-size: 15px;
+  font-size: 25px;
 }
+
 .card-description{
-  font-size: 13px;
+  font-size: 23.5px;
 }
 
-
-
-.sel-img {
+/* .sel-img {
   display: flex;
   margin: auto;
   width: 25vw !important;
   height: fit-content !important;
   image-rendering: high-quality;
-}
-
-/* img {
-  width: var(--img-width);
-  height: var(--img-height);
-
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
 } */
 
 
-
-.card img {
-  /* Height and Width were both 100% but it mad the page to big so I decided to change that */
-width: 70vw;
-height: 85vh !important;
-
-/* margin: 50px; Come back to this-  we get rid of this does better for mobile devices but it staying helps */
-object-fit: fill;
- }
-
-.content {
-  padding: 20px;
-  border: 2px solid black;
-} 
 
 #view {
  
@@ -326,7 +306,33 @@ object-fit: fill;
   align-items: center;
   padding: 15px;
   background-color: var(--logo-color);
+} 
+
+
+
+
+
+
+/* .card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+} */
+
+
+
+.star-rating i {
+  color: #ffc107; /* Gold stars */
+  font-size: 1rem;
 }
+
+.card-title {
+  color: #333;
+  font-weight: 700;
+  font-size: 45px;
+}
+/**/
 
 /* About Full Page */
 .about-page {
@@ -338,6 +344,8 @@ object-fit: fill;
   margin: 15px;
   padding: 25px;
   display: grid;
+  font-size: 35px;
+  font-weight: 400;
 }
 
 .story {
@@ -379,6 +387,7 @@ object-fit: fill;
   .homepage-header {
     display: flex;
     flex-direction: column;
+    object-fit: cover;
     width: 100%;
   }
 
@@ -543,7 +552,7 @@ object-fit: fill;
     display: flex;
     margin: auto;
   }
-  .selection-header{
+  .selection-header {
     font-size: 50px;
   }
   .grid {
@@ -552,7 +561,7 @@ object-fit: fill;
     padding: 75px;
     display: block;
 
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     /* grid-template-rows: auto; */
   }
 
@@ -567,18 +576,27 @@ object-fit: fill;
     color: #0056b3;
   }
 
-  .sel-img{
+  .sel-img {
     height: 100%;
-    width: 300px;
+    width: fit-content;
+    transform: scale(0.99);
   }
 
   .card img {
-    /* Height and Width were both 100% but it mad the page to big so I decided to change that */
     display: block;
     margin: auto;
     width: fit-content;
     object-fit: fill;
-    
+  }
+
+  .card-title {
+    font-size: 35px;
+  }
+  .star-rating {
+    font-size: 25px;
+  }
+  .card-description {
+    font-size: 1rem;
   }
 
   .content {
@@ -612,7 +630,7 @@ object-fit: fill;
 
   .story {
     margin: 5px;
-    font-size: 15px;
+    font-size: 45px;
   }
 
   .about-header {

@@ -13,16 +13,75 @@
   --img-height: 459px;
 }
 
-/* -------------------------------------Home Page ----------------------------------------------------------- */
+body {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
 
-footer {
-  border-top: 2px solid black;
+/* Index/Homepage Full Page */
+.homepage-header {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.top-area {
+  /* background-color: rgba(255,255,255,0.8); */
+  margin-top: 115px;
+}
+
+.hero-header {
+  padding: 35px;
 }
 
 #top {
-  /* Had to put this in because bootstrap wasn't allowing to show  */
   background-color: var(--primary-color) !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
 }
+
+#links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+#links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+#links a:hover,
+#links a.active {
+  color: var(--logo-color);
+}
+
+/* .links li {
+  margin-left: 20px;
+}
+
+.links a {
+  color: #bdc3c7;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.links a:hover,
+.links a.active {
+  color: var(--text-light);
+} */
 
 .nav-options {
   display: flex;
@@ -36,133 +95,53 @@ footer {
   color: #f1f1f1;
 }
 
-/* .nav-options {
-  display: flex;
-  text-decoration: none;
-  font-weight: bold;
-  color: var(--logo-color);
-  list-style: none;
-}
-
-.nav-options:hover {
-  color: #f1f1f1;
-} */
-
-.top-area {
-  /* margin: 45px; */
-  padding: 50px;
-  background-image: url("./assets/images/reading.jpg");
+.hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./assets/images/reading.jpg");
+  align-items: center;
   object-fit: cover;
   background-size: cover;
   background-position: center;
-  /* height: 300px; Was 60vh */
-  /* display: grid; */
+  /* min-height: 30vh; */
+  min-height: fit-content;
+  display: flex;
   align-items: center;
-  /* justify-content: center; */
-  /* text-align: center; */
-  /* padding: 0 20px; */
-  background-size: cover;
-  /* Scales image to fill container without distortion */
-  background-position: center;
-  /* Centers the image */
-  width: 100%;
-  height: 500px;
-}
-
-.hero-header {
+  justify-content: center;
+  text-align: center;
   color: var(--logo-color);
-  background-color: #f1f1f1;
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  /* Responsive font size */
-  margin-bottom: 15px;
+  padding: 0 20px;
 }
-
 
 h2 {
   display: flex;
   justify-content: center;
 }
 
-h2+p {
+h2 + p {
   display: flex;
   justify-content: center;
   /* background-color: aquamarine; */
 }
 
-header {
-  margin: 50px;
-  padding: 20px;
+#shop {
+  display: inline-block;
+  padding: 12px 35px;
+  background: var(--logo-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s ease;
 }
 
+#shop:hover {
+  background-color: floralwhite;
+}
 
-
-/* .container {
+.container {
   display: inline;
   justify-content: center;
-} */
-
-.container-img {
-  display: flex;
-  position: relative;
-  width: 100%;
-  /*Was 25%*/
-  max-width: var(--img-width);
-  margin-bottom: 25px;
+  margin: 20vh;
 }
-
-.top {
-  background-color: var(--primary-color);
-  border-bottom: 2px solid black;
-}
-
-.image {
-  display: block;
-  width: var(--img-width);
-  height: var(--img-height);
-  position: relative;
-  /* Adding this here so the overlay will fit the image */
-}
-
-.overlay {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5);
-  /* Black see-through */
-  color: #f1f1f1;
-  width: var(--img-width);
-  transition: 0.5s ease;
-  opacity: 0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
-}
-
-#container:hover .overlay {
-  opacity: 1;
-}
-
-#nav-ul {
-  display: flex;
-  gap: 5px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-img {
-  width: var(--img-width);
-  height: var(--img-height);
-}
-
-/*This was added by chatgpt*/
-/* ul {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0;
-} */
 
 div {
   display: flex;
@@ -172,26 +151,20 @@ div {
   padding: 0;
 }
 
-body {
-  font-family: "Merriweather", serif !important;
-  font-optical-sizing: auto;
-  font-weight: 400 !important;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
+.container-img {
+  position: relative;
+  width: 50%;
+  max-width: var(--img-width);
+  width: 400vw;
+  margin-bottom: 25px;
 }
 
-.logo {
-  margin: 20px;
-  font-size: 25px;
-  color: var(--logo-color);
-}
-
-/* Created a border to make some separation also decided to make margin top and 
-bottom so it will be separated better. */
-.content-area {
-  /* border: 10px solid black; */
-  margin-bottom: 30px;
-  margin-top: 30px;
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  /*Adding this here so the overlay will fit the image*/
 }
 
 .overlay {
@@ -210,8 +183,17 @@ bottom so it will be separated better. */
   text-align: center;
 }
 
-.content-area:hover .overlay {
+.container-img:hover .overlay {
   opacity: 1;
+}
+
+.end {
+  background-color: var(--primary-color);
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  border-top: 2px solid black;
+  padding: 15px;
 }
 
 a:link,
@@ -221,53 +203,181 @@ a:active {
   color: #fe654f;
 }
 
-section {
-  display: grid;
-  justify-content: center;
-}
-
-#navbar {
-  background-color: var(--primary-color);
-}
-
-.end {
+.footer {
   background-color: var(--primary-color);
   display: grid;
   justify-content: center;
   text-align: center;
-  padding: 150px;
-  margin-top: 50px;
+  border-top: 2px solid black;
+  padding: 15px;
+  /* margin-top: 5px; */
 }
 
-#shop {
+.form {
+  border: 1px solid;
+  width: max-content;
+}
+
+.homepage-button {
+  border: none;
+  padding: 2px 4px;
+  background-color: transparent;
+}
+#email {
+  padding: 2px;
+  height: 2px 4px;
+  border: none;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Navbar to the right
+Logo to the left
+Circular shadow behind the words on hero
+
+LaTorya Sadler
+3:16 PM
+Space between all rights reserved
+Add a Newsletter to home page */
+
+/*Selection Full Page  */
+ .selection {
+  display: flex;
+  margin: auto;
+}
+
+.selection-header {
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+.grid {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3,1fr);
+}
+
+.card {
+  margin: 35px 35px 35px 35px;
+  padding: 25px;
+  width: fit-content;
+  height: 10vh;
+  transform: scale(.78);
+  border-radius: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+} 
+
+.card:hover {
+  color: #0056b3;
+}
+.card-title{
+  text-align: center;
+}
+
+.star-rating{
+  font-size: 25px;
+}
+
+.card-description{
+  font-size: 23.5px;
+}
+
+.sel-img {
+  display: flex;
+  margin: auto;
+  width: 25vw !important;
+  height: fit-content !important;
+  image-rendering: high-quality;
+}
+
+
+.content {
+  padding: 20px;
+  border: 2px solid black;
+} 
+
+#view {
+ 
+  display: flex;
+  align-items: center;
+  padding: 15px;
   background-color: var(--logo-color);
+} 
+
+/**/
+/* Ensure all images have the exact same dimensions without stretching */
+.img-container {
+  height: 400px; /* Adjust this to your preferred height */
+  overflow: hidden;
+  background-color: #f8f9fa;
 }
 
-#shop:hover {
-  background-color: aqua;
+
+
+/* Hover effect for a professional feel */
+.card:hover .card-img-top {
+  transform: scale(1.05);
 }
 
-/* -----------------------------------------------------------About Us Page---------------------------------------------------------------------------------*/
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
 
-.about {
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.star-rating i {
+  color: #ffc107; /* Gold stars */
+  font-size: 0.9rem;
+}
+
+.card-title {
+  color: #333;
+  font-weight: 700;
+  font-size: 45px;
+}
+/**/
+
+/* About Full Page */
+.about-page {
   display: block;
   align-content: center;
 }
 
+.card-about {
+  margin: 15px;
+  padding: 25px;
+  display: grid;
+}
+
 .story {
-  border: 2px dashed black;
-  background-color: #f1f1f1;
   padding: 200px;
   margin: 50px 5px 10px 8px;
-  font-size: 25px;
+  font-size: 5px;
 }
 
 .about-header {
-  font-size: 75px !important;
-
+  /* https://www.w3schools.com/css//css_align.asp */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 55px !important;
   border-bottom: 2px solid black;
 }
 
+.story {
+  margin: 5px;
+  font-size: 50px;
+}
 .end-about {
   background-color: var(--primary-color);
   display: grid;
@@ -277,88 +387,19 @@ section {
   margin-top: 50px;
 }
 
+/* Contact Us Full Page */
 
+/* ----------------------------------------------------------------------------------------------- */
 
+/* Web Responsivness*/
 
-
-
-
-/* --------------------------------------selectionpage-------------------------------------------------- */
-
-.grid {
-  margin: 65px;
-  padding: 75px;
-  /* display: flex; */
-  /* When looking up the grid template, I had to W3schools to understand
-    I was able to figure out somehow by using grid-template and grid-template-rows */
-  grid-template: 80px / auto auto auto;
-  grid-template-rows: auto;
-}
-
-.card {
-  margin: 15px;
-  padding: 25px;
-  display: grid;
-  /* height: 10px;
-  width: 100px; */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.card:hover {
-  color: #0056b3;
-}
-
-img {
-  width: var(--img-width);
-  height: var(--img-height);
-
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
-}
-
-/* Add this class so I can fit the images in the selection page better.
-Also, I have to put the !important because bootstrap prevents the images to change for some reason. */
-/* .sel-img {
-  width: 200px !important;
-  height: 400px !important;
-} */
-
-.card img {
-  /* Height and Width were both 100% but it mad the page to big so I decided to change that */
-  width: 20vw;
-  height: 35vh !important;
-
-  /* margin: 50px; Come back to this-  we get rid of this does better for mobile devices but it staying helps */
-  object-fit: fill;
-}
-
-.content {
-  padding: 20px;
-  border: 2px solid black;
-}
-
-#view {
-  display: block;
-  justify-content: center;
-}
-
-
-
-
-/* ---------------------------------------------------Mobile Responsiveness------------------------------------------------------------- */
-
-/* Tablet & Smaller Screens */
 @media (max-width: 992px) {
-
-  /*Decided to change 600 to 500 to see any changes*/
-  /* --------HomePageSmaller---------- */
-  .navbar {
+  /* Index/Homepage Mobile */
+  .homepage-header {
+    display: flex;
     flex-direction: column;
-    gap: 10px;
-  }
-
-  .hero {
-    
+    object-fit: cover;
+    /* width: 100%; */
   }
 
   .logo {
@@ -367,7 +408,110 @@ Also, I have to put the !important because bootstrap prevents the images to chan
     justify-content: center;
   }
 
-  #container {
+  #top {
+    background-color: var(--primary-color) !important;
+    object-fit: fill;
+  }
+
+  .top-area {
+    display: flex;
+    margin: auto;
+    height: 10vh;
+    backdrop-filter: sepia(90%);
+  }
+
+  /* .links li {
+    margin: 0 10px;
+  } */
+
+  .nav-options {
+    display: flex;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--logo-color);
+    list-style: none;
+  }
+
+  .nav-options:hover {
+    color: #f1f1f1;
+  }
+
+  .hero {
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("./assets/images/reading.jpg");
+    align-items: center;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--logo-color);
+    padding: 0 20px;
+  }
+
+  /* .hero-header{
+    padding: 30px;
+  } */
+
+  /* .links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  .links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .links a:hover,
+  .links a.active {
+    color: var(--logo-color);
+  } */
+
+  h2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  h2 + p {
+    display: flex;
+    justify-content: center;
+  }
+
+  #shop {
+    display: inline-block;
+    padding: 12px 35px;
+    background: var(--logo-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+  }
+
+  #shop:hover {
+    background-color: floralwhite;
+  }
+
+  .container {
+    display: inline;
+    justify-content: center;
+    margin: 20vh;
+  }
+
+  div {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .container-img {
     position: relative;
     width: 50%;
     max-width: var(--img-width);
@@ -399,172 +543,94 @@ Also, I have to put the !important because bootstrap prevents the images to chan
     text-align: center;
   }
 
-  #container:hover .overlay {
+  .container-img:hover .overlay {
     opacity: 1;
   }
 
-  img {
-    width: var(--img-width);
-    height: var(--img-height);
-  }
-
-  .top-area {
-    padding: 50px;
-    background-image: url("./assets/images/reading.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 50vh;
-    display: block;
-    align-items: center;
-    justify-content: center;
-  }
-
-  /* About Us Page Smaller */
-
-  .about {
-    display: block;
-    align-content: center;
-  }
-
-  .story {
-    /* font-size: clamp(1rem, 3vw, 3rem) !important; */
-    /* padding: 15px !important; */
-    font-size: clamp(0.9rem, calc(3vw + 1rem), 2rem) !important;
-    font-size: 5vh;
-    padding: 150px !important;
-  }
-
-  /* Note to Zoe: At 4:11,you cleaned the code a little bit and working on the web responsiveness, change footer class in about to endAbout    */
-  .end-about {
+  .end {
     background-color: var(--primary-color);
     display: grid;
     justify-content: center;
     text-align: center;
-    padding: 15px;
-    /*Was previosly 150*/
+    border-top: 2px solid black;
+    padding: 150px;
     margin-top: 50px;
   }
-  /*  */
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr);
-    /* Drop to 2 columns */
-    margin-top: 20px;
-    /* Remove overlap for cleaner mobile feel */
-  }
 
-  .logo {
-    margin: 20px;
-    text-align: center;
-  }
+  /* Selection Mobile */
 
-  #container {
-    position: relative;
-    width: 50%;
-    max-width: var(--img-width);
-    margin-bottom: 25px;
+  .selection {
+    display: flex;
+    margin: auto;
   }
-
-  .image {
-    display: block;
-    width: 100%;
-    height: auto;
-    position: relative;
-    /*Adding this here so the overlay will fit the image*/
+  .selection-header {
+    font-size: 50px;
   }
-
-  .overlay {
-    position: absolute;
-    bottom: 0;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5);
-    /* Black see-through */
-    color: #f1f1f1;
-    width: 100%;
-    transition: 0.5s ease;
-    opacity: 0;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-  }
-
-  #container:hover .overlay {
-    opacity: 1;
-  }
-
   .grid {
+    /* margin: 65px; */
+    margin: 0 auto;
+    padding: 75px;
     display: block;
+
+    grid-template-columns: repeat(1, 1fr);
+    /* grid-template-rows: auto; */
   }
 
   .card {
-    overflow: auto;
-    /* resize: both; */
-
     width: fit-content;
-    height: fit-content;
+    padding: 25px;
+    transform: scale(0.99);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .card:hover {
+    color: #0056b3;
+  }
+
+  .sel-img {
+    height: 100%;
+    width: fit-content;
+    transform: scale(0.99);
   }
 
   .card img {
-    /* Height and Width were both 100% but it mad the page to big so I decided to change that */
-
-    
-  }
-}
-
-@media (max-width: 500px) {
-
-  
-}
-
-@media (max-width: 500px) {
-  .grid {
     display: block;
-    transform: scale(.9);
-    grid-template: 80px / auto auto auto;
-    grid-template-rows: 200px;
-    width: 100px;
-    translate: 230px;
-    translate: -99px;
-    /* grid-template-columns: 80px / auto auto auto; NEW CHANGE 4/10*/
-    /*Make sure to check the web responsiveness for heading*/
-  }
-
-
-
-  img {
-    /* padding-left: 500px; */
-    /* translate: -58px; */
-    max-width: 100%;
-    height: auto;
-    width: 100px;
-    height: var(--img-height);
-  }
-
-  .card {
-    display: block;
-    overflow: auto;
-    /* resize: both; */
-    transform: scale(.95);
+    margin: auto;
     width: fit-content;
-    height: fit-content;
-  }
-
-  .card img {
-    /* max-width: 100%; */
-    /* height: 100%; */
-    /* height: 500px; */
-    /* margin: 50px; */
-    display: grid;
-    place-items: center;
     object-fit: fill;
-    overflow: auto;
-    resize: both;
   }
 
-  /* Come back to story once you have visited the .card  */
-  .story {
+  .card-title {
+    font-size: 35px;
+  }
+  .star-rating {
+    font-size: 25px;
+  }
+  .card-description {
+    font-size: 1rem;
+  }
+
+  .content {
+    padding: 15px;
+    transform: scale(0.98);
+    border: 2px solid black;
+  }
+
+  #view {
     display: block;
-    /* font-size: 5px !important; */
+    margin: auto;
+    padding: 12px 35px;
+    background: var(--logo-color);
+    text-decoration: none;
+  }
+
+  /* Come back to the selection page */
+
+  /* About */
+
+  .about-page {
+    display: block;
+    align-content: center;
   }
 
   .card-about {
@@ -573,29 +639,28 @@ Also, I have to put the !important because bootstrap prevents the images to chan
     display: grid;
   }
 
-  .about-header {
-    font-size: 25px !important;
-  }
-}
-
-@media (max-width: 400px) {
   .story {
-    /* font-size: clamp(1rem, 3vw, 3rem) !important; */
-    /* padding: 15px !important; */
-    font-size: clamp(0.9rem, calc(3vw + 1rem), 2rem) !important;
-    font-size: 5vh;
-    padding: 150px !important;
-    /* line-height: 1.6px !important; */
+    margin: 5px;
+    font-size: 45px;
   }
 
-  /* Note to Zoe: At 4:11,you cleaned the code a little bit and working on the web responsiveness, change footer class in about to endAbout    */
+  .about-header {
+    /* https://www.w3schools.com/css//css_align.asp */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px !important;
+    border-bottom: 2px solid black;
+  }
+
   .end-about {
     background-color: var(--primary-color);
     display: grid;
     justify-content: center;
     text-align: center;
-    padding: 15px;
-    /*Was previosly 150*/
+    padding: 150px;
     margin-top: 50px;
   }
+
+  /* Contact */
 }
