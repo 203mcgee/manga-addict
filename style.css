@@ -9,7 +9,6 @@
   --logo-color: #fe654f;
 
   --img-width: 259px;
-  /*Once was 25vw*/
   --img-height: 459px;
 }
 
@@ -25,7 +24,7 @@ body {
 .homepage-header {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;      
 }
 
 .logo {
@@ -35,10 +34,17 @@ body {
 
 .top-area {
   /* background-color: rgba(255,255,255,0.8); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   margin-top: 115px;
+  padding: 20px;
 }
 
 .hero-header {
+  margin-bottom: 15px;
   padding: 35px;
 }
 
@@ -49,6 +55,7 @@ body {
   align-items: center;
   gap: 20px;
   padding: 20px;
+  overflow: hidden;
 }
 
 #links {
@@ -67,7 +74,7 @@ body {
   color: var(--logo-color);
 }
 
-/* .links li {
+.links li {
   margin-left: 20px;
 }
 
@@ -81,7 +88,7 @@ body {
 .links a:hover,
 .links a.active {
   color: var(--text-light);
-} */
+}
 
 .nav-options {
   display: flex;
@@ -100,13 +107,13 @@ body {
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("./assets/images/reading.jpg");
   align-items: center;
+
   object-fit: cover;
   background-size: cover;
   background-position: center;
   /* min-height: 30vh; */
   min-height: fit-content;
   display: flex;
-  align-items: center;
   justify-content: center;
   text-align: center;
   color: var(--logo-color);
@@ -155,7 +162,7 @@ div {
   position: relative;
   width: 50%;
   max-width: var(--img-width);
-  width: 400vw;
+  width: 100%;
   margin-bottom: 25px;
 }
 
@@ -245,7 +252,7 @@ Space between all rights reserved
 Add a Newsletter to home page */
 
 /*Selection Full Page  */
- .selection {
+.selection {
   display: flex;
   margin: auto;
 }
@@ -259,85 +266,61 @@ Add a Newsletter to home page */
   display: grid;
   gap: 5px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3,1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .card {
   margin: 35px 35px 35px 35px;
-  padding: 25px;
+  padding: 25px 25px 25px 25px;
   width: fit-content;
-  height: 10vh;
+  overflow: hidden;
+  /*height: 10vh;
   transform: scale(.78);
-  border-radius: 50px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-} 
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+}
 
 .card:hover {
   color: #0056b3;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
 }
-.card-title{
+.card-title {
   text-align: center;
 }
 
-.star-rating{
+.star-rating {
   font-size: 25px;
 }
 
-.card-description{
+.card-description {
   font-size: 23.5px;
 }
 
 .sel-img {
   display: flex;
   margin: auto;
-  width: 25vw !important;
-  height: fit-content !important;
-  image-rendering: high-quality;
+  inline-size: 300px;
+  aspect-ratio: 2/4;
+  object-fit: fill;
 }
 
-
-.content {
-  padding: 20px;
-  border: 2px solid black;
-} 
-
 #view {
- 
   display: flex;
   align-items: center;
   padding: 15px;
   background-color: var(--logo-color);
-} 
-
-/**/
-/* Ensure all images have the exact same dimensions without stretching */
-.img-container {
-  height: 400px; /* Adjust this to your preferred height */
-  overflow: hidden;
-  background-color: #f8f9fa;
 }
 
-
-
-/* Hover effect for a professional feel */
-.card:hover .card-img-top {
-  transform: scale(1.05);
-}
-
-.card {
+/* .card {
   border: none;
   border-radius: 15px;
   overflow: hidden;
   transition: box-shadow 0.3s ease;
-}
-
-.card:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
-}
+} */
 
 .star-rating i {
   color: #ffc107; /* Gold stars */
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .card-title {
@@ -348,36 +331,32 @@ Add a Newsletter to home page */
 /**/
 
 /* About Full Page */
-.about-page {
-  display: block;
-  align-content: center;
-}
-
-.card-about {
-  margin: 15px;
-  padding: 25px;
-  display: grid;
-}
-
-.story {
-  padding: 200px;
-  margin: 50px 5px 10px 8px;
-  font-size: 5px;
-}
 
 .about-header {
-  /* https://www.w3schools.com/css//css_align.asp */
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 55px !important;
-  border-bottom: 2px solid black;
+  font-size: 75px;
 }
 
-.story {
-  margin: 5px;
-  font-size: 50px;
+.card-about p {
+  /* margin: 15px;
+  padding: 25px;
+  display: grid;
+  font-size: 35px;
+  font-weight: 400; 
+  font-size: 10px;
+  width: fit-content;
+  transform: scale(.5); */
+  display: inline-block;
+  width: auto;
+  border-top: 2px solid black;
+  margin-top: 30px;
+  padding: 75px;
+  width: 100%;
+  font-size: calc(0.5rem, 26px, 1rem);
 }
+
 .end-about {
   background-color: var(--primary-color);
   display: grid;
@@ -386,6 +365,7 @@ Add a Newsletter to home page */
   padding: 150px;
   margin-top: 50px;
 }
+
 
 /* Contact Us Full Page */
 
@@ -399,7 +379,7 @@ Add a Newsletter to home page */
     display: flex;
     flex-direction: column;
     object-fit: cover;
-    /* width: 100%; */
+    width: 100%;
   }
 
   .logo {
@@ -411,6 +391,11 @@ Add a Newsletter to home page */
   #top {
     background-color: var(--primary-color) !important;
     object-fit: fill;
+  }
+
+  #navbarSupportedContent {
+    flex-direction: column;
+    min-width: 100%;
   }
 
   .top-area {
@@ -440,18 +425,22 @@ Add a Newsletter to home page */
     background:
       linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url("./assets/images/reading.jpg");
+    display: flex;
+    justify-content: center;
     align-items: center;
+    gap: 20px;
+
+    text-align: center;
     object-fit: cover;
     background-size: cover;
     background-position: center;
     height: 30vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     color: var(--logo-color);
     padding: 0 20px;
   }
+
+
+
 
   /* .hero-header{
     padding: 30px;
@@ -486,6 +475,8 @@ Add a Newsletter to home page */
 
   #shop {
     display: inline-block;
+    width: 200px;
+    height: 50px;
     padding: 12px 35px;
     background: var(--logo-color);
     text-decoration: none;
@@ -515,7 +506,7 @@ Add a Newsletter to home page */
     position: relative;
     width: 50%;
     max-width: var(--img-width);
-    width: 400vw;
+    width: 100%;
     margin-bottom: 25px;
   }
 
@@ -573,7 +564,6 @@ Add a Newsletter to home page */
     display: block;
 
     grid-template-columns: repeat(1, 1fr);
-    /* grid-template-rows: auto; */
   }
 
   .card {
@@ -610,11 +600,11 @@ Add a Newsletter to home page */
     font-size: 1rem;
   }
 
-  .content {
+  /* .content {
     padding: 15px;
     transform: scale(0.98);
     border: 2px solid black;
-  }
+  } */
 
   #view {
     display: block;
@@ -628,29 +618,63 @@ Add a Newsletter to home page */
 
   /* About */
 
+  .about-header {
+    display: inline-block;
+    font-size: 20px;
+  }
+
+  .card-about p {
+    /* margin: 15px;
+    padding: 25px;
+    display: grid;
+    font-size: 35px;
+    font-weight: 400; 
+    font-size: 10px;
+    width: fit-content;
+    transform: scale(.5); */
+    border-top: 2px solid black;
+    display: inline-block;
+    width: auto;
+  }
+  .end-about {
+    background-color: var(--primary-color);
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding: 150px;
+    margin-top: 50px;
+  }
+  
+
+
+  
+  /* Contact */
+}
+
+@media (max-width: 500px) {
+  .homepage-header {
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+    width: 100%;
+  }
+
   .about-page {
     display: block;
     align-content: center;
   }
 
   .card-about {
-    margin: 15px;
-    padding: 25px;
-    display: grid;
+    width: fit-content;
   }
 
   .story {
-    margin: 5px;
-    font-size: 45px;
+    font-size: 30px;
+    font-weight: 400;
   }
 
   .about-header {
-    /* https://www.w3schools.com/css//css_align.asp */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 55px !important;
-    border-bottom: 2px solid black;
+    display: inline-block;
   }
 
   .end-about {
@@ -661,6 +685,17 @@ Add a Newsletter to home page */
     padding: 150px;
     margin-top: 50px;
   }
+}
 
-  /* Contact */
+
+
+/* Mobile Specific Adjustments */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
 }
