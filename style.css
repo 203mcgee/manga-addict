@@ -407,6 +407,10 @@ input[type="submit"]:hover {
   height: 500px;
 }
 
+.social{
+  text-decoration: none;
+}
+
 /* ----------------------------------------------------------------------------------------------- */
 
 /* Web Responsivness*/
