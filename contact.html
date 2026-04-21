@@ -16,7 +16,7 @@
 </head>
 
 <body>
-   
+
 
     <header class="homepage-header">
         <nav id="top" class="navbar navbar-expand-lg">
@@ -48,28 +48,30 @@
         </nav>
     </header>
 
-    <h1>Contact Us</h1>
+    <h1 class="contact-header">Contact Us</h1>
     <section class="contact">
 
 
-        <form class="contact-form">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br>
-            <label for="email">Email:</label><br>
+        <form action="/action_page.php" class="contact-form">
+            <label for="name" class="contact-label">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email" class="contact-label">Email:</label>
             <input type="email" id="email" name="email">
+            <label for="message" class="contact-label"></label>
+            <textarea name="message" rows="10" cols="30" placeholder="Enter a message!" ></textarea>
+            
+            <input type="submit" value="Submit">
         </form>
+       
+
         <br>
-        <label for="message">Message</label>
-        <textarea name="message" rows="10" cols="30"></textarea>
-        <br>
-        <input type="submit" value="Submit">
-        
+
     </section>
 
 
 
 
-    <footer class="end">
+    <footer class="end-contact">
         <p>Our Social Media: </p>
         <ul>
             <li><a href="https://github.com/203mcgee">GitHub</a></li>
@@ -81,4 +83,5 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
