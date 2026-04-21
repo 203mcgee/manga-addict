@@ -558,10 +558,10 @@ Add a Newsletter to home page */
     font-size: 50px;
   }
   .grid {
-    /* margin: 65px; */
+    
+    display: block;
     margin: 0 auto;
     padding: 75px;
-    display: block;
 
     grid-template-columns: repeat(1, 1fr);
   }
@@ -579,14 +579,14 @@ Add a Newsletter to home page */
 
   .sel-img {
     height: 100%;
-    width: fit-content;
+    /* width: fit-content; */
     transform: scale(0.99);
   }
 
   .card img {
     display: block;
     margin: auto;
-    width: fit-content;
+    /* width: fit-content; */
     object-fit: fill;
   }
 
@@ -599,12 +599,6 @@ Add a Newsletter to home page */
   .card-description {
     font-size: 1rem;
   }
-
-  /* .content {
-    padding: 15px;
-    transform: scale(0.98);
-    border: 2px solid black;
-  } */
 
   #view {
     display: block;
