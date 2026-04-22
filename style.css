@@ -29,7 +29,7 @@ body {
 
 .logo {
   display: grid;
-    justify-content: center;
+  justify-content: center;
   font-size: 24px;
   font-weight: 700;
 }
@@ -62,9 +62,9 @@ body {
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navbar-brand {
@@ -283,18 +283,18 @@ Add a Newsletter to home page */
 }
 
 .card {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   margin: 35px 35px 35px 35px;
   padding: 25px 25px 25px 25px;
   width: fit-content;
   overflow: hidden;
-  /*height: 10vh;
-  transform: scale(.78);
-  border-radius: 15px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
 }
 
 .card:hover {
-  color: #0056b3;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
 }
 .card-title {
@@ -324,12 +324,10 @@ Add a Newsletter to home page */
   background-color: var(--logo-color);
 }
 
-/* .card {
-  border: none;
-  border-radius: 15px;
-  overflow: hidden;
-  transition: box-shadow 0.3s ease;
-} */
+#view:hover{
+  background-color: white;
+  color: black;
+}
 
 .star-rating i {
   color: #ffc107; /* Gold stars */
@@ -467,8 +465,6 @@ input[type="submit"]:hover {
     /* backdrop-filter: sepia(90%); */
   }
 
-  
-
   .nav-options {
     display: flex;
     text-decoration: none;
@@ -499,7 +495,7 @@ input[type="submit"]:hover {
     padding: 0 10px;
   }
 
-  .hero-header{
+  .hero-header {
     margin-top: 50px;
     padding: 3px;
   }
@@ -602,14 +598,16 @@ input[type="submit"]:hover {
     display: block;
     margin: 0 auto;
     padding: 75px;
-
+    translate: -50px;
     grid-template-columns: repeat(1, 1fr);
   }
 
   .card {
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
     width: fit-content;
     padding: 25px;
-    transform: scale(0.99);
+    transform: scale(.9);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
 
@@ -618,9 +616,6 @@ input[type="submit"]:hover {
   }
 
   .sel-img {
-    /* height: 100%; */
-    /* width: fit-content; */
-    /* transform: scale(0.99); */
     height: 100%;
     width: 100%;
   }
@@ -742,5 +737,3 @@ input[type="submit"]:hover {
     margin-top: 50px;
   }
 }
-
-
