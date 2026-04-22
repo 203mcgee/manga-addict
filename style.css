@@ -28,6 +28,8 @@ body {
 }
 
 .logo {
+  display: grid;
+    justify-content: center;
   font-size: 24px;
   font-weight: 700;
 }
@@ -38,6 +40,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: sticky;
   text-align: center;
   margin-top: 115px;
   padding: 20px;
@@ -56,6 +59,16 @@ body {
   gap: 20px;
   padding: 20px;
   overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+  white-space: nowrap;
 }
 
 #links {
@@ -363,14 +376,15 @@ Add a Newsletter to home page */
 .contact-header {
   text-align: center;
 }
-.contact-form{
+.contact-form {
   border: 2px solid black;
   padding: 20px;
   /* margin-bottom: 100px; */
-  transform: scale(.99);
+  transform: scale(0.99);
 }
 /* Found this in W3schools */
-input[type="text"],input[type="email"],
+input[type="text"],
+input[type="email"],
 textarea[type="message"] {
   width: 100%;
   padding: 12px 20px;
@@ -396,7 +410,7 @@ input[type="submit"]:hover {
   color: black;
   background-color: white;
 }
-.end-contact{
+.end-contact {
   background-color: var(--primary-color);
   display: grid;
   justify-content: center;
@@ -407,7 +421,7 @@ input[type="submit"]:hover {
   height: 500px;
 }
 
-.social{
+.social {
   text-decoration: none;
 }
 
@@ -425,13 +439,19 @@ input[type="submit"]:hover {
   }
 
   .logo {
-    /* margin: 20px; */
+    /* margin-top: 20px; */
     display: grid;
     justify-content: center;
   }
 
   #top {
     background-color: var(--primary-color) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    overflow: hidden;
     object-fit: fill;
   }
 
@@ -478,29 +498,13 @@ input[type="submit"]:hover {
     background-position: center;
     height: 30vh;
     color: var(--logo-color);
-    padding: 0 20px;
+    padding: 0 10px;
   }
 
-  /* .hero-header{
-    padding: 30px;
-  } */
-
-  /* .links {
-    display: flex;
-    align-items: center;
-    list-style: none;
+  .hero-header{
+    margin-top: 50px;
+    padding: 3px;
   }
-  .links li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 15px;
-  }
-
-  .links a:hover,
-  .links a.active {
-    color: var(--logo-color);
-  } */
 
   h2 {
     display: flex;
@@ -680,7 +684,8 @@ input[type="submit"]:hover {
   }
 
   /* Contact */
-  input[type="text"],input[type="email"],
+  input[type="text"],
+  input[type="email"],
   textarea[type="message"] {
     width: 100%;
     padding: 12px 20px;
@@ -706,12 +711,16 @@ input[type="submit"]:hover {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width <= 400px) {
   .homepage-header {
     display: flex;
     flex-direction: column;
     object-fit: cover;
     width: 100%;
+  }
+  .navbar-toggler {
+    margin-left: auto;
+    margin-top: -4px;
   }
 
   .about-page {
