@@ -464,12 +464,10 @@ input[type="submit"]:hover {
     display: flex;
     margin: auto;
     height: 10vh;
-    backdrop-filter: sepia(90%);
+    /* backdrop-filter: sepia(90%); */
   }
 
-  /* .links li {
-    margin: 0 10px;
-  } */
+  
 
   .nav-options {
     display: flex;
@@ -620,9 +618,11 @@ input[type="submit"]:hover {
   }
 
   .sel-img {
-    height: 100%;
+    /* height: 100%; */
     /* width: fit-content; */
-    transform: scale(0.99);
+    /* transform: scale(0.99); */
+    height: 100%;
+    width: 100%;
   }
 
   .card img {
@@ -642,7 +642,7 @@ input[type="submit"]:hover {
     font-size: 1rem;
   }
   .price {
-    font-size: 14px;
+    font-size: 15.5px;
   }
   #view {
     display: block;
@@ -662,14 +662,6 @@ input[type="submit"]:hover {
   }
 
   .card-about p {
-    /* margin: 15px;
-    padding: 25px;
-    display: grid;
-    font-size: 35px;
-    font-weight: 400; 
-    font-size: 10px;
-    width: fit-content;
-    transform: scale(.5); */
     border-top: 2px solid black;
     display: inline-block;
     width: auto;
@@ -751,13 +743,4 @@ input[type="submit"]:hover {
   }
 }
 
-/* Mobile Specific Adjustments */
-@media (max-width: 992px) {
-  .navbar-collapse {
-    background-color: var(--primary-color);
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-}
+
