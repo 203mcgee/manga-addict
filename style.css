@@ -71,37 +71,7 @@ body {
   white-space: nowrap;
 }
 
-#links {
-  display: flex;
-  align-items: center;
-  list-style: none;
-}
-#links li a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
 
-#links a:hover,
-#links a.active {
-  color: var(--logo-color);
-}
-
-.links li {
-  margin-left: 20px;
-}
-
-.links a {
-  color: #bdc3c7;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.links a:hover,
-.links a.active {
-  color: var(--text-light);
-}
 
 .nav-options {
   display: flex;
@@ -124,7 +94,7 @@ body {
   object-fit: cover;
   background-size: cover;
   background-position: center;
-  /* min-height: 30vh; */
+
   min-height: fit-content;
   display: flex;
   justify-content: center;
@@ -141,7 +111,6 @@ h2 {
 h2 + p {
   display: flex;
   justify-content: center;
-  /* background-color: aquamarine; */
 }
 
 #shop {
@@ -230,7 +199,6 @@ a:active {
   text-align: center;
   border-top: 2px solid black;
   padding: 15px;
-  /* margin-top: 5px; */
 }
 
 .form {
@@ -255,14 +223,7 @@ a:active {
   gap: 5px;
 }
 
-/* Navbar to the right
-Logo to the left
-Circular shadow behind the words on hero
 
-LaTorya Sadler
-3:16 PM
-Space between all rights reserved
-Add a Newsletter to home page */
 
 /*Selection Full Page  */
 .selection {
@@ -377,7 +338,6 @@ Add a Newsletter to home page */
 .contact-form {
   border: 2px solid black;
   padding: 20px;
-  /* margin-bottom: 100px; */
   transform: scale(0.99);
 }
 /* Found this in W3schools */
@@ -465,7 +425,6 @@ input[type="submit"]:hover {
     display: flex;
     margin: auto;
     height: 10vh;
-    /* backdrop-filter: sepia(90%); */
   }
 
   .nav-options {
@@ -626,7 +585,6 @@ input[type="submit"]:hover {
   .card img {
     display: block;
     margin: auto;
-    /* width: fit-content; */
     object-fit: fill;
   }
 
