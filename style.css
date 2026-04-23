@@ -419,7 +419,10 @@ input[type="submit"]:hover {
   height: 500px;
 }
 
+
+
 .social {
+  display: grid;
   text-decoration: none;
 }
 
